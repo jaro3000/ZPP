@@ -1,0 +1,21 @@
+Jak używać
+
+make
+./compile.sh test.lisp
+
+
+Język: jedyne toplevel expression którego można użyć to (defun liczba-parametrow
+int-exp), identyfikatory które mogą występować w int-exp to p0, p1, p2, ...
+
+Język testowy:
+
+int-exp -> id | int | (+ int-exp int-exp) | ( * int-exp int-exp) 
+				| (if bool-exp int-exp int-exp)
+				| (function-name int-exp-list)
+
+int-exp-list -> int-exp int-exp-list | <INTENTIONALY LEFT BLANK>
+
+bool-exp -> (= int-exp int-exp)
+
+
+
